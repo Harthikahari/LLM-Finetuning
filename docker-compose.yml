@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # Training environment
+  training:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: text2sql:latest
+    container_name: text2sql-training
+    runtime: nvidia
+    volumes:
+      - ./:/workspace
+      - ./data:/workspace/data
+      - ./outputs:/workspace/outputs
+      - ./models:/workspace/models
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - PYTHONUNBUFFERED=1
+    command: /bin/bash
+    tty: true
+    stdin_open: true
+
+  # API service
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    image: text2sql-api:latest
+    container_name: text2sql-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+    environment:
+      - MODEL_PATH=/app/models
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000

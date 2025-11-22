@@ -1,0 +1,14 @@
+model:
+  name: "codellama-7b"
+  hf_path: "codellama/CodeLlama-7b-hf"
+  type: "causal_lm"
+
+  # Model loading settings
+  torch_dtype: "float16"
+  load_in_8bit: false
+  load_in_4bit: false
+  device_map: "auto"
+
+  # Architecture-specific settings
+  max_length: 512
+  vocab_size: 32016

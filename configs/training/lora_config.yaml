@@ -1,0 +1,36 @@
+training_method: "lora"
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+  bias: "none"
+
+training:
+  num_epochs: 3
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  warmup_steps: 100
+  max_length: 512
+
+  # Optimization
+  optimizer: "paged_adamw_32bit"
+  fp16: false
+  bf16: true
+  gradient_checkpointing: true
+
+  # Logging and saving
+  logging_steps: 10
+  save_steps: 500
+  eval_steps: 500
+  save_total_limit: 3
+
+  # Output
+  output_dir: "./outputs"
+  run_name: "text2sql-lora"

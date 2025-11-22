@@ -1,0 +1,25 @@
+training_method: "full"
+
+training:
+  num_epochs: 3
+  batch_size: 2
+  gradient_accumulation_steps: 8
+  learning_rate: 1.0e-5
+  warmup_steps: 100
+  max_length: 512
+
+  # Optimization
+  optimizer: "adamw_torch"
+  fp16: false
+  bf16: true
+  gradient_checkpointing: true
+
+  # Logging and saving
+  logging_steps: 10
+  save_steps: 500
+  eval_steps: 500
+  save_total_limit: 3
+
+  # Output
+  output_dir: "./outputs"
+  run_name: "text2sql-full"

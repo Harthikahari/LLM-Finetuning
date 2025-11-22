@@ -1,0 +1,35 @@
+# Core dependencies
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+peft>=0.6.0
+accelerate>=0.24.0
+bitsandbytes>=0.41.0
+
+# Data processing
+sqlparse>=0.4.4
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Training
+scipy>=1.10.0
+scikit-learn>=1.3.0
+
+# API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.66.0
+python-dotenv>=1.0.0
+
+# Logging and monitoring
+tensorboard>=2.14.0
+wandb>=0.15.0
+
+# Optional: Advanced features
+# onnx>=1.14.0
+# optimum>=1.13.0
+# sacrebleu>=2.3.0
