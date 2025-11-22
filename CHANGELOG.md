@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.0] - 2024-01-XX
+## [1.0.0] - 2024-12-01
+
+### Changed
+- Updated to production-ready version 1.0.0
+- Professionalized all author information and metadata
+- Enhanced documentation and project descriptions
+- Updated repository URLs to reflect correct GitHub organization
+
+## [0.1.0] - 2024-11-22
 
 ### Added
 - Initial release of Text2SQL framework

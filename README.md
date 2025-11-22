@@ -43,7 +43,7 @@ graph LR
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/LLM-Finetuning.git
+git clone https://github.com/Harthikahari/LLM-Finetuning.git
 cd LLM-Finetuning
 
 # Install dependencies
@@ -257,20 +257,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-For questions and feedback:
-- Open an issue on GitHub
-- Email: your.email@example.com
+For questions, feedback, and support:
+- 📝 **Issues**: [GitHub Issues](https://github.com/Harthikahari/LLM-Finetuning/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Harthikahari/LLM-Finetuning/discussions)
+- 📧 **Email**: text2sql@example.com
+- 🌐 **Repository**: [github.com/Harthikahari/LLM-Finetuning](https://github.com/Harthikahari/LLM-Finetuning)
 
 ## 🌟 Citation
 
-If you use this project in your research, please cite:
+If you use this project in your research or work, please cite:
 
 ```bibtex
-@software{text2sql_finetuning,
-  title={Text2SQL: Production-Grade LLM Fine-Tuning for SQL Generation},
-  author={Your Name},
+@software{text2sql_finetuning_2024,
+  title={Text2SQL: Production-Grade LLM Fine-Tuning Framework for SQL Generation},
+  author={Text2SQL Contributors},
   year={2024},
-  url={https://github.com/yourusername/LLM-Finetuning}
+  version={1.0.0},
+  url={https://github.com/Harthikahari/LLM-Finetuning},
+  note={A comprehensive framework for fine-tuning LLMs on Text-to-SQL tasks with support for LoRA, QLoRA, and multiple benchmark datasets}
 }
 ```
 

@@ -4,21 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "text2sql"
-version = "0.1.0"
-description = "Production-grade LLM fine-tuning for Text-to-SQL generation"
+version = "1.0.0"
+description = "Production-grade LLM fine-tuning framework for Text-to-SQL generation with support for multiple models, efficient training methods, and deployment-ready inference"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Text2SQL Contributors", email = "text2sql@example.com"}
 ]
-keywords = ["nlp", "sql", "text2sql", "llm", "fine-tuning", "transformers"]
+keywords = ["nlp", "sql", "text2sql", "llm", "fine-tuning", "transformers", "lora", "qlora", "spider", "wikisql"]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/LLM-Finetuning"
-Documentation = "https://github.com/yourusername/LLM-Finetuning/blob/main/docs"
-Repository = "https://github.com/yourusername/LLM-Finetuning"
-Issues = "https://github.com/yourusername/LLM-Finetuning/issues"
+Homepage = "https://github.com/Harthikahari/LLM-Finetuning"
+Documentation = "https://github.com/Harthikahari/LLM-Finetuning/blob/main/docs"
+Repository = "https://github.com/Harthikahari/LLM-Finetuning"
+Issues = "https://github.com/Harthikahari/LLM-Finetuning/issues"
 
 [tool.black]
 line-length = 100

@@ -5,8 +5,8 @@ This package provides a comprehensive solution for training, evaluating, and dep
 Large Language Models for converting natural language queries to SQL.
 """
 
-__version__ = "0.1.0"
-__author__ = "Your Name"
+__version__ = "1.0.0"
+__author__ = "Text2SQL Contributors"
 __license__ = "MIT"
 
 from text2sql.data import datasets, preprocessing, tokenization

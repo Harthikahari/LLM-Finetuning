@@ -18,8 +18,17 @@ logger = logging.getLogger(__name__)
 # Create app
 app = FastAPI(
     title="Text2SQL API",
-    description="REST API for Text-to-SQL generation",
-    version="0.1.0",
+    description="Production-grade REST API for converting natural language questions to SQL queries using fine-tuned LLMs",
+    version="1.0.0",
+    contact={
+        "name": "Text2SQL Contributors",
+        "url": "https://github.com/Harthikahari/LLM-Finetuning",
+        "email": "text2sql@example.com",
+    },
+    license_info={
+        "name": "MIT License",
+        "url": "https://opensource.org/licenses/MIT",
+    },
 )
 
 # CORS middleware
