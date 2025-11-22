@@ -1,0 +1,18 @@
+dataset:
+  name: "bird"
+  data_dir: "./data/bird"
+  cache_dir: "./data/cache"
+
+  # Splits
+  train_split: "train"
+  eval_split: "validation"
+  test_split: "test"
+
+  # Preprocessing
+  clean_queries: true
+  normalize_schemas: true
+  validate: true
+  lowercase: false
+
+  # Prompt format
+  prompt_format: "instruction"
